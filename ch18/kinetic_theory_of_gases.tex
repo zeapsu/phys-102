@@ -1,0 +1,108 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[]{amsthm}
+\usepackage[]{amssymb}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{blindtext}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage{pgfplots}
+
+\pgfplotsset{width=7cm,compat=1.9}
+
+% We will externalize the figures
+\usepgfplotslibrary{external}
+\tikzexternalize
+
+% custom commands
+\newcommand{\rr}{\quad\Rightarrow\quad}
+% \newcommand{\tt}[1]{\intertext{#1}} % doesn't work
+
+\title{Chapter 18 Kinetic Theory of Gases Problem Set}
+\author{Andry Paez}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Questions}
+
+\subsubsection*{10. Escape velocity for the Earth refers to the minimum speed an object must have to leave the Earth and never return. (\textit{a}) The escape velocity for the Moon is about one-fifth of what it is for the Earth due to the Moon's smaller mass; explain why the moon has practically no atmosphere. (\textit{b}) If hydrogen was once in the Earth's atmosphere, why would it have probably escaped?}
+a. Since the escape velocity of Mars is one -fifth that of the Earth, more molecules will be able to escape. Over time, most of the molecules of gas will have probably escaped, explaining the lack of atmosphere in the moon. 
+\\
+\\
+b. Hydrogen is the lightest element, and therefore has the highest average speed. This means it is the most likely to be able to escape the Earth's atmosphere.
+\subsubsection*{11. If a container of gas is at rest, the average velocity of molecules must be zero. Yet the average speed is not zero. Explain}
+Given the random movement of the particles in the container of gas, the average velocity is "0" because particles end up going in opposing directions in all directions (x, y, z). However, when talking about the magnitude or just the pure amount of speed at which they are moving (omitting direction) we then see that each particle is moving relatively fast.
+\\ \\
+\textbf{From the book}: Velocity is a vector quantity. When the velocity is averaged, the direction must be taken into account. Since the molecules travel in random paths, with no net displacement (the container is at rest), the average velocity will have to be zero. Speed is a scalar quantity, so only the (positive) magnitude is considered in the averaging process. The molecules are not at rest, so the average speed will not be zero.
+\section*{Problems}
+\centerline{\textbf{Molecular Interpretation of Temperature}}
+\subsubsection*{1. (\textit a) What is the average translational kinetic energy of an oxygen molecule at STP? (\textit b) What is the total translational kinetic energy of 1.0 mol of $O_2$ molecules at $25\degree$C?}
+\begin{align*}
+    \intertext{a. The average translational kinetic energy of an oxygen molecule at STP is $\frac 3 2 kT$}
+    \frac 3 2 kT &= \frac 3 2 (1.38 \times 10^{-23} \frac J K)(273 K) \\
+                 &\approx 5.65 \times 10^{-21} J
+    \intertext{b. The total translational kinetic energy would be given by $\frac 3 2 nRT$}
+    \frac 3 2 nRT &= \frac 3 2 (1.0\;mol)(8.314 \frac {J}{mol \cdot K})(25\degree C + 273K) \\
+                  &\approx 3.7 \times 10^{-3} J \quad\text{or}\quad 3700\;J
+\end{align*}
+\subsubsection*{3. By what factor will the rms speed of a gas molecules increase if the temperature is increased from $0\degree$C to $180\degree$C?}
+\begin{align*}
+    \intertext{Let the rms speed of a gas molecule be defined as}
+    \bar v_{rms} &= \sqrt{\frac {3kT}{m}} 
+    \intertext{At $T = 0\degree$C is STP, so we can see that $\bar v_{rms}$ would be}
+    \bar v_{rms_1} &= \sqrt{\frac {3k(273K)}{m}} \\
+    \intertext{At $T = 180\degree$C, $\bar v_{rms}$ would be}
+    \bar v_{rms_2} &= \sqrt{\frac {3k(453K)}{m}} \\
+    \intertext{The ration of the two would be} 
+    \frac {\sqrt{\frac {3k(453K)}{m}}}{\sqrt{\frac {3k(273K)}{m}}} &= \sqrt{\frac {453K}{273K}} \approx 1.29
+\end{align*}
+\subsubsection*{5. What speed would a 1.0-g paper clip have if it had the same kinetic energy as a molecule at $15\degree$C?}
+\begin{align*}
+    \intertext{The kinetic energy of a molecule at $15\degree$C is given by $\frac 3 2 kT$}
+    \frac 3 2 kT &= \frac 3 2 (1.38 \times 10^{-23} \frac J K)(288 K) \\
+                 &\approx 6.3 \times 10^{-21} J
+    \intertext{The speed of the paper clip would be given by}
+    \frac 1 2 mv^2 &= 6.3 \times 10^{-21} J \\
+    v &= \sqrt{\frac {2(6.3 \times 10^{-21} J)}{1.0 \times 10^{-3} kg}} \\
+      &\approx 2.5 \times 10^{-9} m/s
+\end{align*}
+\subsubsection*{9. If the pressure in a gas tripled while its volume is held constant, by what factor does $v_{rms}$ change?}
+\begin{align*}
+    \intertext{The rms speed of a gas is given by}
+    \bar v_{rms} &= \sqrt{\frac {3kT}{m}} \\
+    \intertext{If the pressure in a gas tripled while its volume is held constant, then the temperature would also triple. Therefore, the rms speed would be}
+    \bar v_{rms_2} &= \sqrt{\frac {3k(3T)}{m}} \\
+                   &= \sqrt{\frac {3kT}{m}} \cdot \sqrt{3} \\
+                   &= \sqrt{3} \\
+                   &\approx 1.73 
+\end{align*}
+\subsubsection*{14. What is the average distance between oxygen molecules at STP?}
+\begin{align*}
+    \intertext{Assume that oxygen is an ideal gas, and that each molecule occupies the same cubical volume of $l^3$. We need to find the volume per molecule from the ideal gas law, and then the side length of that cubical molecular volume will be an estimate of the average distance between molecules.}
+    PV = NkT \\
+    \frac V N = \frac {kT}{P}  &= \frac {(1.38 \times 10^{-23} \frac J K)(273 K)}{1.013 \times 10^{5} \frac N {m^2}} \approx 3.72 \times 10^{-26} \frac {m^3}{molecule}\\ 
+    \intertext{The side length of the cube would be}
+    l &= \sqrt[3]{\frac V N} \approx 3.34 \times 10^{-9} m
+\end{align*}
+\subsubsection*{15. Two isotopes of uranium, $^{235}U$ and $^{238}U$ (the superscipts refer to their atomic masses), can be separated by a gas diffusion process by combining them with fluorine to make the gaseous compound $UF_6$. Calculate the ratio of the rms speeds of these molecules for the two isotopes, at constant $T$. Use Appendix F for masses.}
+\begin{align*}
+    \intertext{The rms speed of a gas is given by}
+    \bar v_{rms} &= \sqrt{\frac {3kT}{m}} \\
+    \intertext{The ratio of the rms speeds would be (3kT is constant)}
+    \frac {\bar v_{rms_{^{238}U}}}{\bar v_{rms_{^{235}U}}} &= \sqrt{\frac {m_{^{238}U}}{m_{^{235}U}}} \\
+    \intertext{The ratio of the rms speeds would be}
+    \frac {\bar v_{rms_{^{238}U}}}{\bar v_{rms_{^{235}U}}} &= \sqrt{\frac {238.050788\;u}{235.043930\;u}} \\
+    \intertext{The ratio of the rms speeds would be}
+    \frac {\bar v_{rms_{^{238}U}}}{\bar v_{rms_{^{235}U}}} &\approx 1.01 
+\end{align*}
+\end{document}
