@@ -14,7 +14,8 @@
 % Set up fancy header/footer
 \pagestyle{fancy}
 \fancyhead[RO,R]{{\large\textbf{Andry Paez}}}
-\fancyhead[LO,L]{\large{\textbf{Ch 19 - Heat and the First Law of Thermodynamics Part 1}}}
+\fancyhead[LO,L]{\large{\textbf{Ch.19 Problem Set}}}
+\fancyhead[CO,C]{\large{\textbf{Part 1}}}
 % \fancyhead[RO,R]{\today}
 \fancyfoot[LO,L]{}
 \fancyfoot[CO,C]{\thepage}
@@ -23,31 +24,72 @@
 \renewcommand{\footrulewidth}{0.4pt}
 %%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\hmwkTitle}{Ch 19 - Heat and the First Law of Thermodynamics}
+% \newcommand{\hmwkDueDate}{February 12, 2014}
+\newcommand{\hmwkClass}{PHYS-102}
+% \newcommand{\hmwkClassTime}{}
+% \newcommand{\hmwkClassInstructor}{Professor Isaac Newton}
+\newcommand{\hmwkAuthorName}{\textbf{Andry Paez}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{3in}
+    \textmd{\textbf{\hmwkTitle :}}\\
+    \vspace{0.5in}
+    \textmd{\textbf{\hmwkClass}}\\
+    % \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    % \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{4in}
+}
+
+\author{\hmwkAuthorName}
+\date{}
 \begin{document}
+\maketitle
+% New blank page for printers that print on both sides of paper
+\clearpage\shipout\null
 \begin{center}
     \section*{\textbf{\underline {Conceptual Questions}}}
 \end{center}
 
 \subsection*{2. When a hot object warms a cooler object, does temperature flow between them? Are the temperature changes of the two objects equal? Explain.} \\
 
+No. \textit{Energy} is exchanged between them not \textit {temperature}. Once the objects have reached thermal equilibrium, their temperatures will be the same. However, their temperature \textit{changes} will not necessarily be the same. 
+
 \subsection*{5. The specific heat of water is quite large. Explain why this fact maker water particularly good for heating systems (that is, hot-water radiators)} \\
+
+Water has a high specific heat, which means that it can absorb alot of energy with a small increase in temperature. Water can be heated, then easily transported throughout a building, and will give off a large amount of energy as it cools. This makes water particularly useful for radiator systems.
 
 \subsection*{7. Explain why burns caused by steam at 100$\degree$C on the skin are often more sever than burns caused by water at 100$\degree$C.} \\
 
+When water at 100$\degree$C comes in contact with the skin, energy is transferred to the skin and the water begins to cool. When steam at 100$\degree$C comes in contact with the skin, energy is transferred to the skin and the steam begins to condense to water at 100$\degree$C. Steam burns are often more severe than water burns due to the energy given off by the steam as it condenses, before it begins to cool.
+
 \subsection*{10. Very high in the Earth's atmosphere the temperature can be 700$\degree$C. Yet an animal there would freeze to death rather than roast. Explain.} \\
+
+The air is so thin at this altitude that there are very few molecules to transfer energy to the animal. The animal would freeze to death because it would lose energy to the surrounding space faster than it would gain energy from the few molecules that are present. \\\\
+\textbf{From the Book:} Whether an animal freezes or not depends more on internal energy of the mass of air surrounding it than on the temperature. Temperature is a measure of the average kinetic energy of the molecules in a substance. If a mass of air in the upper atmosphere has a low density of fast moving molecules, it will have a high temperature but a low internal (or thermal) energy. Even though the molecules are moving quickly, there will be few collisions, and little energy transferred to the animal. The animal will also be radiating thermal energy, and so will quickly deplete its internal energy.
+\vspace{2em}
 \hrule \vspace{2em}
 \begin{center}
     \section*{\textbf{\underline {Problems}}}
 \end{center}
-\large{\textbf{\textit{19-1 Heat as Energy Transfer}}}
+\large{\textbf{\textit{\underline{19-1 Heat as Energy Transfer}}}} \\
 
 \subsection*{1. To what temperature will 8700 J of heat raise 3.0 kg of water that is initially at 10.0$\degree$C?}
-
+\begin{align*}
+    \intertext{Recall, that Energy = $mc\Delta T$ \qquad [The value of $c$ for water is 4186 $\frac{J}{kg\cdot C}]}
+    8700J &= (3.0kg)(4186\frac{J}{kg\cdot C})(T_f - 10\degree C) \\
+    \intertext{Solving for $T_f$}
+    T_f &= 10\degree C + \frac{8700J}{(3.0kg)(4186\frac J {kg\cdot C})} \approx 10.7\degree C\\
+\end{align*}
 \subsection*{3. An average active person consumes about 2500 Cal a day. (\textit a) What is this in joules? (\textit b) What is this in kilowatt-hours? (\textit c) If your power company charges about 10$\cent$ per kilowatt-hour, how much would your energy cost per day if you bought it from the power company? Could you feed yourself on this much money per day?}
 
 \subsection*{5. How Many joules and kilocalories are generated when the brakes are used to bring a 1200-kg car to rest from a speed of 95 km/h?}
 \vspace{1em}
-\large{\textbf{\textit{19-3 and 19-4 Specific Heat; Calorimetry}}}
+\large{\textbf{\textit{\underline{19-3 and 19-4 Specific Heat; Calorimetry}}}} \\
 
 \subsection*{7. An automobile cooling system holds 18 L of water. How much heat does it absorb if its temperature rises from 15$\degree$C to 95$\degree$C?}
 
@@ -56,12 +98,12 @@
 \subsection*{11. How long does it take a 750-W coffeepot to bring to a boil 0.75 L of water initially at 8.0$\degree$C? Assume that the part of the pot which is heated with the water is made of 280g of aluminum, and that no water boils away}
 
 \subsection*{13. A 31.5-g glass thermometer reads 23.6$\degree$C before it is placed in 135 mL of water. When the water and thermometer come to equilibrium, the thermometer reads 39.2$\degree$C. What was the original temperature of the water? [\textit{Hint}: Ignore the mass of fluid inside the glass thermometer.]}
-\]
+
 \subsection*{15. When a 290-g piece of iron at 180$\degree$C is placed in a 95-g aluminum calorimeter cup containing 250g of glycerin at 10$\degree$C, the final temperature is observed to be 38$\degree$C. Estimate the specific heat of glycerin.}
 
 \subsection*{17. The 1.20-kg head of a hammer has a speed of 7.5 m/s just before it strikes a nail (Fig.19-29) and is brought to rest. Estimate the temperature rise of a 14-g iron nail generated by 10 such hammer blows done in quick succession. Assume the nail absorbs all the energy.}
 \vspace{1em}
-\large{\textbf{\textit{19-5 Latent Heat}}}
+\large{\textbf{\textit{\underline{19-5 Latent Heat}}}} \\
 
 \subsection*{18. How much heat is needed to melt 26.50 kg of silver that is initially at 25$\degree$C?}
 
