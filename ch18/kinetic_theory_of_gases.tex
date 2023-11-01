@@ -1,52 +1,82 @@
 \documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage[]{amsthm}
+	
+\usepackage[margin=1in]{geometry}		% For setting margins
+\usepackage{amsmath}				% For Math
 \usepackage[]{amssymb}
 \usepackage{amsmath}
 \usepackage{gensymb}
-\usepackage{blindtext}
-\usepackage{geometry}
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- }
-\usepackage{pgfplots}
+\usepackage{fancyhdr}				% For fancy header/footer
+\usepackage{graphicx}				% For including figure/image
+\usepackage{cancel}					% To use the slash to cancel out stuff in work
+\usepackage{wasysym}                % For cent symbol
+\usepackage{needspace}              % To force item to next page
 
-\pgfplotsset{width=7cm,compat=1.9}
+%%%%%%%%%%%%%%%%%%%%%%
+% Set up fancy header/footer
+\pagestyle{fancy}
+\fancyhead[RO,R]{{\large\textbf{PHYS-102}}}
+\fancyhead[LO,L]{\large{\textbf{Ch 18 Problem Set}}}
+% \fancyhead[CO,C]{\large{\textbf{Part 1}}}
+% \fancyhead[RO,R]{\today}
+\fancyfoot[LO,L]{}
+\fancyfoot[CO,C]{\thepage}
+\fancyfoot[RO,R]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%
 
-% We will externalize the figures
-\usepgfplotslibrary{external}
-\tikzexternalize
+\newcommand{\hmwkTitle}{Chapter 18 Kinetic Theory of Gases}
+% \newcommand{\hmwkDueDate}{February 12, 2014}
+\newcommand{\hmwkClass}{PHYS-102}
+% \newcommand{\hmwkClassTime}{}
+% \newcommand{\hmwkClassInstructor}{Professor Isaac Newton}
+\newcommand{\hmwkAuthorName}{\textbf{\underline{\hspace{3in}}}}
 
-% custom commands
-\newcommand{\rr}{\quad\Rightarrow\quad}
-% \newcommand{\tt}[1]{\intertext{#1}} % doesn't work
+% math shortcuts
+\newcommand\rr{\quad\Rightarrow\quad}
 
-\title{Chapter 18 Kinetic Theory of Gases Problem Set}
-\author{Andry Paez}
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkTitle}}\\
+    \vspace{0.5in}
+    \textmd{\textbf{\hmwkClass}}\\
+    % \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    % \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{4in}
+}
+\author{\hmwkAuthorName}
 \date{}
-
 \begin{document}
 \maketitle
-
-\section*{Questions}
-
-\subsubsection*{10. Escape velocity for the Earth refers to the minimum speed an object must have to leave the Earth and never return. (\textit{a}) The escape velocity for the Moon is about one-fifth of what it is for the Earth due to the Moon's smaller mass; explain why the moon has practically no atmosphere. (\textit{b}) If hydrogen was once in the Earth's atmosphere, why would it have probably escaped?}
+\newpage
+\begin{center}
+    \section*{\textbf{\underline {Conceptual Questions}}}
+\end{center}
+\subsubsection*{
+    10. Escape velocity for the Earth refers to the minimum speed an object must have
+    to leave the Earth and never return. (\textit{a}) The escape velocity for the Moon
+    is about one-fifth of what it is for the Earth due to the Moon's smaller mass;
+    explain why the moon has practically no atmosphere. (\textit{b}) If hydrogen was
+    once in the Earth's atmosphere, why would it have probably escaped?
+}
 a. Since the escape velocity of Mars is one-fifth that of the Earth, more molecules will be able to escape. Over time, most of the molecules of gas will have probably escaped, explaining the lack of atmosphere in the moon. 
-\\
-\\
+\\\\
 b. Hydrogen is the lightest element, and therefore has the highest average speed. This means it is the most likely to be able to escape the Earth's atmosphere.
 \subsubsection*{11. If a container of gas is at rest, the average velocity of molecules must be zero. Yet the average speed is not zero. Explain}
 Given the random movement of the particles in the container of gas, the average velocity is "0" because particles end up going in opposing directions in all directions (x, y, z). However, when talking about the magnitude or just the pure amount of speed at which they are moving (omitting direction) we then see that each particle is moving relatively fast.
 \\ \\
 \textbf{From the book}: Velocity is a vector quantity. When the velocity is averaged, the direction must be taken into account. Since the molecules travel in random paths, with no net displacement (the container is at rest), the average velocity will have to be zero. Speed is a scalar quantity, so only the (positive) magnitude is considered in the averaging process. The molecules are not at rest, so the average speed will not be zero.
-\section*{Problems}
-
-\centerline{\underline{\textbf{Molecular Interpretation of Temperature}}} \\
-
+\newpage
+\begin{center}
+    \section*{\textbf{\underline {Problems}}}
+\end{center}
+\begin{center}
+    \subsection*{\textbf{\textit{18–1 Molecular Interpretation of Temperature}}}
+\end{center}
 \subsubsection*{1. (\textit a) What is the average translational kinetic energy of an oxygen molecule at STP? (\textit b) What is the total translational kinetic energy of 1.0 mol of $O_2$ molecules at $25\degree$C?}
 \begin{align*}
     \intertext{a. The average translational kinetic energy of an oxygen molecule at STP is $\frac 3 2 kT$}
