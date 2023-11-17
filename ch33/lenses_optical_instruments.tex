@@ -182,24 +182,99 @@ for glass, so the violet light bends more, resulting in a smaller magnitude foca
 }
 \begin{align*}
     \intertext{(a)}
+    \frac 1 {d_i} &= \frac 1 f - \frac 1 {d_o} = \frac {fd_o}{d_o - f} \\
+    d_i &= \frac{(28\;cm)(18\;cm)}{18\;cm - 28\;cm} \\
+    \Aboxed{d_i &\approx -50\;cm}
+    \intertext{$\therefore$ The image is virtual and is behind the lens}
+    \intertext{(b)}
+    m &= -\frac{d_i}{d_o} = -\frac{50\;cm}{18\;cm} \\
+    \Aboxed{m &= +2.8\times}
+    \intertext{$\therefore$ The image is upright and is roughly three times
+    larger}
 \end{align*}
 \subsubsection*{
     10. (a) How far from a 50.0 mm focal length lens must an object be placed if its image
     is to be magnified 2.50X and be real? (b) What if the image is to be virtual and magnified 2.50X?
 }
+\begin{align*}
+    \intertext{(a) For the image to be real, the image distance has to be
+    positive, so the magnification has to be negative}
+    -2.50 &= -\frac{d_i}{d_o} \rr d_i = 2.50d_o \\
+    \intertext{Using the thin lens equation,}
+    \frac 1{50\;mm} &= \frac 1 {d_o}+ \frac 1 {2.50d_o} \rr \frac 1{50\;mm} = \frac 1 {d_o}\bp{1 + \frac 1 {2.50}} \\
+    d_o &= 50\;mm\bp{1 + \frac 1 {2.50}} \\
+    \Aboxed{d_o &\approx 70\;mm}
+    \intertext{(b) Same process but instead of a negative magnification, we need
+    a positive one, meaning $d_i$ is negative}
+    d_i &= -2.50d_o \\
+    \frac 1{50\;mm} &= \frac 1 {d_o}- \frac 1 {2.50d_o} \rr \frac 1{50\;mm} = \frac 1 {d_o}\bp{1 - \frac 1 {2.50}} \\
+    d_o &= 50\;mm\bp{1 - \frac 1 {2.50}} \\
+    \Aboxed{d_o &\approx 30\;mm}
+\end{align*}
 \subsubsection*{
     12. (a) A 2.80 cm-high insect is 1.30 m from a 135 mm focal length lens. Where is the image,
     how high is it, and what type is it? (b) What if f = -135 mm?
 }
+\begin{align*}
+    \intertext{(a) Using the lens equation to find the image distance,}
+    d_i &= \frac{fd_o}{d_o - f} = \frac{(0.135\;m)(1.30\;m)}{1.30\;m - 0.135\;m} \\
+    \Aboxed{d_i &\approx 0.151\;m} \\
+    m &= -\frac{d_i}{d_o} \rr m = \frac{h_i}{h_o} \rr\therefore -\frac{d_i}{d_o}
+    = \frac{h_i}{h_o} \\
+    h_i &= -\frac{d_ih_o}{d_o} = -\frac{(0.151\;m)(2.80\;cm)}{1.30\;m} \\
+    \Aboxed{h_i &\approx -0.324\;m} 
+    \intertext{$\therefore$ The image is 0.151 m behind the lens, is real, and
+    is inverted}
+    \intertext{(b) A negative focal length hints that it is now a diverging lens}
+    \intertext{Using the lens equation (for a diverging lens) to find the image distance}
+    d_i &= \frac{fd_o}{f-d_o} = \frac{(0.135\;m)(1.30\;m)}{0.135\;m - 1.30\;m}
+    \approx -0.151\;m \\
+    m &= -\frac{d_i}{d_o} \rr m = \frac{h_i}{h_o} \rr\therefore -\frac{d_i}{d_o}
+    = \frac{h_i}{h_o} \\
+    h_i &= -\frac{d_ih_o}{d_o} = -\frac{(-0.151\;m)(2.80\;cm)}{1.30\;m} \\
+    \Aboxed{h_i &\approx +0.324\;m} 
+\end{align*}
 \subsubsection*{
     13. A bright object and a viewing screen are separated by a distance of 86.0 cm. At what location(s)
     between the object and the screen should a lens of focal length 16.0 cm be placed in order to produce
     a sharp image on the screen? [Hint, first draw a diagram.]
 }
+\begin{align*}
+    \intertext{The sum of the object and image distances must be the distance between
+    object and screen, which we label as $d_T$. We solve this relationship for
+    the image distance, and then use that to find object distance}
+    d_T &= d_i + d_o \rr d_i = d_T - d_o;\quad \frac 1 {d_o} + \frac 1 {d_i} =
+    \frac 1 f \\
+    \frac 1 f &= \frac 1 {d_o} + \frac 1 {d_T - d_o} \\ 
+    \frac 1 {d_o} &+ \frac 1 {d_T - d_o} - \frac 1 f = 0\\ 
+    \frac{f(d_T-d_o) + fd_o - d_o(d_T-d_o)}{fd_o(d_T-d_o)} &=
+    \frac{fd_T-fd_o+fd_o-d_Td_o+d_o^2}{fd_o(d_T-d_o)} = 0 \\
+    \frac{d_o^2-d_Td_o+fd_T}{fd_o(d_T-d_o)} &= 0
+    \intertext{so,}
+    d_o^2 - d_Td_o+fd_T &= 0
+    \intertext{Using the quadratic formula,}
+    d_o &= \frac {d_T \pm \sqrt{d_T^2 - 4fd_T}}{2} \\
+    d_o &= \frac {(86.0\;cm) \pm \sqrt{(86.0\;cm)^2 - 4(16.0\;cm)(86.0\;cm)}}{2} \\
+    \Aboxed{d_o &= 64.7\;cm,\;21.3\;cm}
+    \intertext{Note that $d_T^2 - 4fd_T > 0 \rr d_T > 4f$ so, $D=\{(d_T,f)\;|\;
+    d_T > 4f\}$}
+\end{align*}
 \subsubsection*{
     14. How far apart are an object and an image formed by an 85 cm focal length converging lens if the
     image is 2.95X larger than the object and is real?
 }
+\begin{align*}
+    \intertext{Thin lens equation to find image distance using the relationship
+    for image distance using magnification (for a real image $d_o = +$,
+    $d_i = +$, so $m = -$)}
+    m &= -\frac{d_i}{d_o} \rr d_i = -md_o = -(-2.95)d_o = 2.95d_o \\
+    \frac 1 f &= \frac 1 {d_o} + \frac 1 {d_i} = \frac 1 {d_o} + \frac 1 {2.95d_o} \\
+    \frac 1 {85\;cm} &= \frac{2.95 + 1}{2.95d_o} \rr d_o =
+    \frac{3.95}{2.95}(85\;cm) \approx 113.8\;cm\\
+    \intertext{so,}
+    d_i &= 2.95d_o = 2.95(113.8\;cm) \approx 335.8\;cm \\
+    \Aboxed{\therfore d_T &= d_i + d_o = 113.8\;cm + 335.8\;cm \approx 450\;cm}
+\end{align*}
 \newpage
 \begin{center}
     \subsection*{\textbf{\textit{33-3 Lens Combinations}}}
@@ -208,11 +283,38 @@ for glass, so the violet light bends more, resulting in a smaller magnitude foca
     20. A diverging lens with f = 33.5 cm is placed 14.0 cm behind a converging lens with f = 20.0 cm.
     Where will an object at infinity be focused?
 }
+\begin{align*}
+    \intertext{The image distance of the first lens will be the object distance
+    for the second lens. Object at $\infty\rightarrow d_o = \infty$ for first lens.}
+    \frac 1 {d_i_1} &= \frac 1 {f_1} - \frac 1 {d_o_1} \rr \frac 1 {d_i_1} = \frac 1
+    {20.0\;cm} - \frac 1 \infty \\
+    d_i_1 &= 20.0\;cm \\
+    \intertext{Since this image is behind the second lens, the object distance
+    for the second lens is negative, and so, $d_o_2 = 14.0\;cm-20.0\;cm=-6.0\;cm$}
+    \frac 1 {d_i_2} &= \frac 1 {f_2} - \frac 1 {d_o_2} \rr d_i_2 =
+    \frac{f_2d_o_2}{d_o_2-f_2} \\
+    d_i_2 &= \frac{(-33.5\;cm)(-6.0\;cm)}{-6.0\;cm -(-33.5\;cm)} \approx
+    7.31\;cm
+    \intertext{\Aboxed{\therefore\text{The image is 7.31 cm behind the second
+    lens and is real}}}
+\end{align*}
 \subsubsection*{
     21. Two 25.0 cm focal length converging lenses are placed 16.5 cm apart. An object is placed 35.0 cm
     in front of one lens. Where w ill the final image formed by the second lens be located? What is the
     total magnification?
 }
+\begin{align*}
+    \intertext{Let $d_o_1 = 35.0\;cm$, $f=25.0\;cm$ for lens #1}
+    d_i &= \frac{f_1d_o_1}{d_o_1-f_1} = \frac{(25.0\;cm)(35.0\;cm)}{35.0\;cm-25.0\;cm}\approx 87.5\;cm \\
+    m_1 &= -\frac{d_i_1}{d_o_1} = -\frac{87.5\;cm}{35.0\;cm} = -2.5\times
+    \intertext{Let $d_o_2 = 16.5\;cm-87.5\;cm = -71.0\;cm$, $f=25.0\;cm$ for lens #2}
+    d_i &= \frac{f_1d_o_1}{d_o_1-f_1} = \frac{(25.0\;cm)(-71.0\;cm)}{-71.0\;cm-25.0\;cm}\approx 18.5\;cm \\
+    m_2 &= -\frac{d_i_1}{d_o_1} = -\frac{18.5\;cm}{-71.0\;cm} = +0.260\times
+    \intertext{Total magnification,}
+    m_T &= m_1m_2 = (-2.5\times)(0.260\times) = -0.651\times 
+    \intertext{\Aboxed{\therefore\text{The final image is 18.5 cm behind the second
+    lens, real, inverted, and about 35\% smaller}}}
+\end{align*}
 \subsubsection*{
     26. A diverging lens is placed next to a converging lens of
 focal length $f_C$, as in Fig. 33 15. If $f_T$ represents the focal
@@ -223,7 +325,16 @@ diverging lens, $f_D$, is given by
     \displaystyle\frac{1}{f_C}
 \]
 }
-
+\begin{align*}
+    \intertext{Assuming that the initial object is at $d_o_1 = \infty$}
+    \frac 1 {f_C} &= \frac 1 {\infty} + \frac 1 {d_i_1} \rr f_C = d_i_1 
+    \intertext{The image distance of the first lens becomes the object distance
+    of lens #2 (note that the image is behind the second lens, so $d_o_2 = -f_C$)}
+    \frac 1 {f_D} &=  -\frac 1 {f_C} + \frac 1 {d_i_2}
+    \intertext{Since the object was at $\infty$ the second image distance must
+    be at the combined focal length, $\therefore\;d_i_2=f_T$}
+    \Aboxed{\frac 1 {f_D} &= \frac 1 {f_T} - \frac 1 {f_C}}
+\end{align*}
 \subsubsection*{
     27. A lighted candle is placed 36 cm in front of a converging lens of focal length $f_1$ = 13 cm,
     which in turn is 56 cm in front of another converging lens of focal length $f_2$ = 16 cm. (a) Draw a 
@@ -235,6 +346,30 @@ diverging lens, $f_D$, is given by
         \includegraphics[width=0.3\textwidth]{figures/p27.png}
     \end{center}
 \end{figure}
+\noindent\intertext{(a) We see that the image is real and upright. We estimate that it is 30 cm
+    beyond the second lens, and that the final image height is half the original object
+    height.}
+\begin{figure}[h]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{figures/p27a.jpg}
+    \end{center}
+\end{figure}
+\begin{align*}
+    \intertext{(b) First lens,}
+    \frac 1 {d_i_1} &= \frac 1 {f_1} - \frac 1 {d_o_1} \rr 
+    d_i_1 = \frac {f_1d_o_1}{d_o_1-f_1} =
+    \frac{(13\;cm)(36\;cm)}{36\;cm-13\;cm} \approx 23.4\;cm 
+    \intertext{Image for lens #1 becomes the object for lens #2 (note the
+    distance between the lenses, and that $d_i_1$ describes the distance of
+    the image from lens #1, not the distance from lens #2), so, $d_o_2 =
+    56\;cm - 20.35\;cm = 35.65\;cm$}
+    d_i_2 &= \frac{f_2d_o_2}{d_o_2-f_2} = \frac{(16\;cm)(35.65\;cm)}{35.65\;cm-16\;cm} \approx 29\;cm \\
+    m_T &= m_1m_2 = \bp{-\frac{d_i_1}{d_o_1}}\bp{-\frac{d_i_2}{d_o_2}} =
+    \bp{-\frac{20.35\;cm}{36\;cm}}\bp{-\frac{29.028\;cm}{35.65\;cm}} \approx
+    0.46\times
+    \intertext{\Aboxed{\therefore\text{The final image is about 29 cm behind the second
+    lens, real, upright, and about 54\% smaller}}}
+\end{align*}
 \newpage
 \begin{center}
     \subsection*{\textbf{\textit{33-4 Lensmaker's Equation}}}
@@ -242,6 +377,16 @@ diverging lens, $f_D$, is given by
 \subsubsection*{
     28. A double concave lens has surface radii of 33.4 cm and 28.8 cm. What is the focal length if n = 1.58
 }
+\begin{align*}
+    \intertext{Using the lensmaker's equation, (note that a double concave lens
+    means a diverging lens, so $f$ is negative meaning radii are negative as well
+    $f=\frac R 2$)}
+    \frac 1 f &= (n-1)\bp{\frac 1 {R_1} + \frac 1 {R_2}} \\
+    \frac 1 f &= (n-1)\bp{\frac{R_2 + R_1}{R_1R_2}} \rr f =
+    \frac{R_1R_2}{(n-1)(R_2+R_1)} \\
+    f &= \frac{(-33.4\;cm)(-28.8\;cm)}{(1.58-1)(-33.4\;cm+(-28.8\;cm))} \\
+    \Aboxed{f &\approx -26.7\;cm}
+\end{align*}
 \subsubsection*{
     29. Both surfaces of a double convex lens have radii of 31.4 cm. If the focal length is 28.9 cm, what is
     the index of refraction of the lens material?
